@@ -1,2 +1,2 @@
 # RiseAbove
-Humans Mental Consulting Website 
+Humans Mental Health Consulting Website 
