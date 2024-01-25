@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    flex-direction: column; /* Added to stack the text vertically */
+  }
+  
+  .letter-slider {
+    display: flex;
+    font-size: 8em;
+  }
+  .letter-slide {
+    display: flex;
+    font-size: 5em;
+  }
+  
+  .letter {
+    opacity: 0;
+    transform: translateY(1em);
+    animation: slideUp 1s forwards;
+    animation-delay: calc(0.1s * var(--index));
+    font-size: larger;
+    color: rgb(90, 178, 222);
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #riseAboveConnect {
+    display: none; /* Initially hide the second text */
+  }
+  
+  #content {
+    display: none; /* Content initially hidden */
+    text-align: center;
+    padding: 20px;
+  }
+  
